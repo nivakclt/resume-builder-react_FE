@@ -1,7 +1,6 @@
-import React, { useState,useRef } from 'react'
+import React, { useRef } from 'react'
 import { FaEdit } from "react-icons/fa";
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import TextField from '@mui/material/TextField';
@@ -9,7 +8,6 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-import { Divider } from '@mui/material';
 import jobRoles from '../assets/it_job_roles.json'
 import { updateResumeApi } from '../services/allApiServices';
 
