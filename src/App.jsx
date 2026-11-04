@@ -8,12 +8,14 @@ import Downloads from "./Pages/Downloads";
 import Pnf from "./Pages/Pnf";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
+import SmoothScroll from '../src/SmoothScroll';
 
 function App() {
   
 
   return (
     <>
+    <SmoothScroll/>
     <Header/>
     <Routes>
       <Route path='' element={<Home/>} />
