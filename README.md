@@ -1,21 +1,66 @@
-## project steps
+# Resume Builder – Frontend
 
-1.create project using vite
-2.clear unwanted codes and file
-3.install necessory node packages
-    -install material ui
-    -add bootstrap cdn link
-    -add google fonts with cdn
-    -install react-icon
-    -index.css update
-    -update website icon and title
-4.create a folder for pages.create componenets  for main pages.
-5.create a folder for components.create components such as header,footer,etc.
-6.provide path to page components[react.router-dom]
-7.Design components
-8.To make API calls:
-    -create api folder in src and,
-        -create aciosInstance.js file,define axios Instance and inteceptors in js file.
-        -create apiServices.js file where we define common api steps.
-        -create services folder in src and,
-        -create allApiServices.js file,and define individual functions for individual api calls
+A web-based Resume Builder application developed using React. It allows users to create and customize resumes and export them as PDF documents.
+
+## Tech Stack
+
+<p>
+  <img src="https://skillicons.dev/icons?i=react,js,html,css,bootstrap" />
+</p>
+
+- **Frontend:** React.js
+- **Styling:** CSS, Bootstrap
+- **API Integration:** Axios
+- **PDF Generation:** jsPDF
+- **Resume Preview:** HTML Canvas
+
+## Features
+
+- Create and edit resumes
+- User-friendly interface
+- Resume preview
+- Download resumes as PDF
+- Responsive design
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone YOUR_FRONTEND_REPOSITORY_URL
+```
+
+Navigate to the project directory:
+
+```bash
+cd resume-builder
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+## Project Structure
+
+```text
+src/
+├── components/
+├── pages/
+├── assets/
+├── App.jsx
+└── main.jsx
+```
+
+## Developer
+
+**Niva K.**
+
+[GitHub](https://github.com/nivakclt)
