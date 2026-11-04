@@ -2,6 +2,10 @@
 
 A web-based Resume Builder application developed using React. It allows users to create and customize resumes and export them as PDF documents.
 
+## Live Demo
+
+[View Live Project]-https://resume-builder-react-epa49xkky-nivakclts-projects.vercel.app/
+
 ## Tech Stack
 
 <p>
