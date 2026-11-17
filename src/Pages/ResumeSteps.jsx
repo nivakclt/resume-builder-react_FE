@@ -1,4 +1,3 @@
-import React from 'react'
 import { IoDocuments } from "react-icons/io5";
 import { FaFileDownload } from "react-icons/fa";
 import { Link } from 'react-router-dom';

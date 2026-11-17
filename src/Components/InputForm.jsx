@@ -98,24 +98,34 @@ function InputForm({ setRes }) {
     }
 
     const handleSubmit = async () => {
-        const { fullname, location, jobtitle, email, phone, linkedin, github, degree, college, year, skills, summery } = resumeData
-        if (fullname && location && jobtitle && email && phone && linkedin && github && degree && college &&
-            year && summery && skills) {
-            //api call
-            const response = await addResumeApi(resumeData)
-            console.log(response)
+    const {
+        fullname, location, jobtitle, email, phone,
+        linkedin, github, degree, college, year,
+        skills, summery
+    } = resumeData;
+
+    if (
+        fullname && location && jobtitle && email &&
+        phone && linkedin && github && degree &&
+        college && year && summery && skills?.length > 0
+    ) {
+        try {
+            const response = await addResumeApi(resumeData);
+
             if (response.status === 201) {
-                alert("Resume Created!!")
-                nav(`/view/${response?.data?.id}`)
+                alert("Resume Created!!");
+                nav(`/view/${response?.data?.id}`);
+            } else {
+                alert("Resume Creation Failed!!");
             }
-            else {
-                alert("Resume Creation Failed!!")
-            }
+        } catch (error) {
+            console.error("Resume creation error:", error);
+            alert("Something went wrong while creating resume!");
         }
-        else {
-            alert("Please Fill in the form Completely!!")
-        }
+    } else {
+        alert("Please Fill in the form Completely!!");
     }
+};
 
     const renderStepContent = (stepCount) => {
         switch (stepCount) {
